@@ -1,0 +1,4 @@
+{
+    "extension": ["js", "tsx"],
+    "spec": ["server/dist/test/*.js"]
+}

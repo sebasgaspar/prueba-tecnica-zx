@@ -1,0 +1,62 @@
+openapi: 3.0.0
+info:
+  title: Proyect API
+  description: Prueba tecnica Node JS 
+  termsOfService: http:localhost
+  contact:
+    name: Sebastian Gaspar
+    email: sebasgaspar14@gmail.com
+  license:
+    name: Apache 2.0
+    url: http://apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.0
+servers:
+- url: https://9m514waznf.execute-api.sa-east-1.amazonaws.com/dev/api/
+  description: Prueba Tecnica Node JS DEV
+- url: http://localhost:3000/api
+  description: Prueba Tecnica Node JS LOCAL
+
+paths:
+  /search:
+    get:
+      tags:
+        - Country
+      description: Permite obtener la informacion del cliente por id
+      parameters:
+        - in: query
+          name: q
+          schema:
+            type: string
+          description: Query of suggested country
+      responses:
+        "200":
+          description: Successful request
+          content:
+            appication/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/country'
+                x-content-type: appication/json
+components:
+  schemas:
+    country:
+      type: object
+      properties:
+        name:
+          type: string
+          example: "London, ON, Canada"
+        latitude:
+          type: string
+          example: "42.98339"
+        longitude:
+          type: string
+          example: "-81.23304"
+        score:
+          type: number
+          example: 0.9
+      example:
+        name: London, ON, Canada
+        latitude: "42.98339"
+        longitude: "-81.23304"
+        score: 0.9
