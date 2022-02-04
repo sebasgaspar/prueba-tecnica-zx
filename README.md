@@ -9,7 +9,7 @@ _The development was done in API and Graphql_
 * [API](https://9m514waznf.execute-api.sa-east-1.amazonaws.com/dev/docs/)
 * [Graphql](https://rqkuvhgr2c.execute-api.sa-east-1.amazonaws.com/dev/graphql)
 
-´´´
- API: https://9m514waznf.execute-api.sa-east-1.amazonaws.com/dev/docs/
- Graphql: https://rqkuvhgr2c.execute-api.sa-east-1.amazonaws.com/dev/graphql
-´´´
+```
+ * API: https://9m514waznf.execute-api.sa-east-1.amazonaws.com/dev/docs/
+ * Graphql: https://rqkuvhgr2c.execute-api.sa-east-1.amazonaws.com/dev/graphql
+```
