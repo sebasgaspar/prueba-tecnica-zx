@@ -21,7 +21,7 @@ paths:
     get:
       tags:
         - Country
-      description: Permite obtener la informacion del cliente por id
+      description: GET CITY INFO SUGGESTION 
       parameters:
         - in: query
           name: q
